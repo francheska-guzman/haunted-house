@@ -1,0 +1,57 @@
+body {
+	margin: 0 auto;
+	background-image: url("images/stars.gif");
+	background-repeat: repeat;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.ghost1 {
+	width: 150px;
+	height: 150px;
+}
+
+.ghost2 {
+	width: 500px;
+	height: 500px;
+}
+
+.ghost3 {
+	width: 150px;
+	height: 250px;
+}
+
+.aStory {
+	width: 300px;
+	height: 50px;
+	border: none;
+	background-color: #14004C;
+	font-family: 'Tangerine', cursive;
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+.aStory:hover {
+	background-color: #48A2D6;
+}
+
+#house {
+	width: 100%;
+	margin-top: 20px;
+	height: 675px;
+	background-image: url("images/bg1.jpg");
+	position: relative;
+}
+
+#firstGhost {
+	position: absolute;
+}
+
+#secondGhost {
+	position: absolute;
+}
+
+#thirdGhost {
+	position: absolute;
+}
+
