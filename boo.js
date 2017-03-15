@@ -49,10 +49,10 @@ function Boo3() {
 	}
 }
 
-function background2() {
-	document.getElementById("house").style.backgroundImage = "url('images/bg2.jpg')";
+function Out() {
+	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 }
 
-function background3() {
-	document.getElementById("house").style.backgroundImage = "url('images/bg3.jpg')";
+function In(){
+	document.getElementById("house").style.backgroundImage = "url('images/bg2.jpeg')";
 }
