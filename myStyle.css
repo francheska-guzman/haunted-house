@@ -34,21 +34,41 @@ body {
 
 #firstGhost {
 	top: 100px;
-	width: 150px;
-	height: 150px;
 	position: absolute;
 }
 
 #secondGhost {
-	width: 500px;
-	height: 500px;
 	position: absolute;
 }
 
 #thirdGhost {
-	width: 200px;
-	height: 250px;
 	position: absolute;
+}
+
+#icecream1 {
+	top: 100px;
+	left: 900px;
+	position: absolute;
+}
+
+#icecream2 {
+	top: 100px;
+	left: 950px;
+	position: absolute;
+}
+
+#ic1 {
+	width: 200px;
+	height: 300px;
+}
+
+#ic2 {
+	width: 100px;
+	height: 250px;
+}
+
+#ic3 {
+	
 }
 
 #cat {

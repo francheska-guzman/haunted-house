@@ -1,11 +1,3 @@
-function Run() {
-	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
-	document.getElementById("cat").style.opacity = "0.0";
-	Boo1();
-	Boo2();
-	Boo3();
-}
-
 function Boo1() {
 	var elem = document.getElementById("firstGhost");
 	var pos = 0;
@@ -51,7 +43,7 @@ function Boo3() {
 	var id = setInterval(frame, .5);
 
 	function frame() {
-		if (pos == 200) {
+		if (pos == 100) {
 			clearInterval(id);
 			document.getElementById("thirdGhost").style.opacity = "0.0";
 			document.getElementById("thirdGhost").style.transition = "5s";
@@ -64,12 +56,71 @@ function Boo3() {
 	}
 }
 
-function In() {
-	document.getElementById("house").style.backgroundImage = "url('images/bg2.jpeg')";
-	cat();
-	Boo4();
-	Boo5();
-	Boo6();
+function iceCream1() {
+	document.getElementById("icecream1").style.opacity = "1";
+	document.getElementById("icecream1").style.transition = "1s";
+
+	var elem = document.getElementById("icecream1");
+	var pos = 0;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 100) {
+			clearInterval(id);
+			document.getElementById("icecream1").style.opacity = "0.0";
+			document.getElementById("icecream1").style.transition = "10s";
+		}
+		else {
+			pos++;
+			elem.style.right = pos + 'px';
+			elem.style.left = pos + 'px';
+		}
+	}
+}
+
+function iceCream2() {
+	document.getElementById("icecream2").style.opacity = "1";
+	document.getElementById("icecream2").style.transition = "1s";
+
+	var elem = document.getElementById("icecream2");
+	var pos = 0;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 300) {
+			clearInterval(id);
+			document.getElementById("icecream2").style.opacity = "0.0";
+			document.getElementById("icecream2").style.transition = "10s";
+		}
+		else {
+			pos++;
+			elem.style.right = pos + 'px';
+			elem.style.left = pos + 'px';
+		}
+	}
+}
+
+
+function iceCream3() {
+	document.getElementById("icecream3").style.opacity = "1";
+	document.getElementById("icecream3").style.transition = "1s";
+
+	var elem = document.getElementById("icecream3");
+	var pos = 0;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 300) {
+			clearInterval(id);
+			document.getElementById("icecream3").style.opacity = "0.0";
+			document.getElementById("icecream3").style.transition = "10s";
+		}
+		else {
+			pos++;
+			elem.style.right = pos + 'px';
+			elem.style.left = pos + 'px';
+		}
+	}
 }
 
 function cat() {
@@ -89,4 +140,29 @@ function cat() {
 			elem.style.left = pos + 'px';
 		}
 	}
+}
+
+function Run() {
+	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
+	document.getElementById("cat").style.opacity = "0.0";
+	document.getElementById("icecream1").style.opacity = "0.0";
+	document.getElementById("icecream2").style.opacity = "0.0";
+	Boo1();
+	Boo2();
+	Boo3();
+}
+
+function In() {
+	document.getElementById("house").style.backgroundImage = "url('images/bg2.jpg')";
+	iceCream1();
+	iceCream2();
+	iceCream3();
+}
+
+function End() {
+	document.getElementById("house").style.backgroundImage = "url('images/bg3.jpeg')";
+	cat();
+	Boo4();
+	Boo5();
+	Boo6();
 }
