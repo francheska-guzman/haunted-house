@@ -32,7 +32,7 @@ h1 {
 }
 
 #house {
-	margin: 20px;
+	margin: auto;
 	width: 1200px;
 	height: 650px;
 	background-image: url("images/bg1.jpg");
