@@ -4,7 +4,7 @@ function Boo1() {
 	var id = setInterval(frame, 0.5);
 
 	function frame() {
-		if (pos == 600) {
+		if (pos == 650) {
 			clearInterval(id);
 			document.getElementById("firstGhost").style.opacity = "0.0";
 			document.getElementById("firstGhost").style.transition = "5s";
@@ -71,7 +71,7 @@ function iceCream1() {
 		if (pos == 150) {
 			clearInterval(id);
 			document.getElementById("icecream1").style.opacity = "0.0";
-			document.getElementById("icecream1").style.transition = "15s";
+			document.getElementById("icecream1").style.transition = "10s";
 		}
 		else {
 			pos++;
@@ -93,7 +93,7 @@ function iceCream2() {
 		if (pos == 550) {
 			clearInterval(id);
 			document.getElementById("icecream2").style.opacity = "0.0";
-			document.getElementById("icecream2").style.transition = "15s";
+			document.getElementById("icecream2").style.transition = "10s";
 		}
 		else {
 			pos++;
@@ -102,7 +102,6 @@ function iceCream2() {
 		}
 	}
 }
-
 
 function iceCream3() {
 	document.getElementById("icecream3").style.opacity = "1";
@@ -116,7 +115,7 @@ function iceCream3() {
 		if (pos == 800) {
 			clearInterval(id);
 			document.getElementById("icecream3").style.opacity = "0.0";
-			document.getElementById("icecream3").style.transition = "15s";
+			document.getElementById("icecream3").style.transition = "10s";
 			cat1();
 		}
 		else {
@@ -231,12 +230,13 @@ function fan() {
 }
 
 function Boo7() {
+	document.getElementById("firstGhost").style.top = "0px";
 	var elem = document.getElementById("firstGhost");
-	var pos = 600;
+	var pos = 500;
 	var id = setInterval(frame, .5);
 
 	function frame() {
-		if (pos == 2000) {
+		if (pos == 1400) {
 			clearInterval(id);
 		}
 		else {
@@ -248,12 +248,13 @@ function Boo7() {
 }
 
 function Boo8() {
+	document.getElementById("secondGhost").style.top = "100px";
 	var elem = document.getElementById("secondGhost");
-	var pos = 600;
+	var pos = 0;
 	var id = setInterval(frame, .5);
 
 	function frame() {
-		if (pos == 2000) {
+		if (pos == 1700) {
 			clearInterval(id);
 		}
 		else {
