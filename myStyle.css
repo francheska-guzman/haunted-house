@@ -6,22 +6,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-.ghost1 {
-	width: 150px;
-	height: 150px;
-}
-
-.ghost2 {
-	width: 500px;
-	height: 500px;
-}
-
-.ghost3 {
-	width: 200px;
-	height: 250px;
-}
-
-.aStory {
+.story {
 	width: 300px;
 	height: 50px;
 	border: none;
@@ -32,7 +17,7 @@ body {
 	opacity: .7;
 }
 
-.aStory:hover {
+.story:hover {
 	transition: 1s;
 	background-color: #C69024;
 	opacity: 1;
@@ -48,14 +33,25 @@ body {
 }
 
 #firstGhost {
+	top: 100px;
+	width: 150px;
+	height: 150px;
 	position: absolute;
 }
 
 #secondGhost {
+	width: 500px;
+	height: 500px;
 	position: absolute;
 }
 
 #thirdGhost {
+	width: 200px;
+	height: 250px;
 	position: absolute;
 }
 
+#cat {
+	top: 400px;
+	position: absolute;
+}
