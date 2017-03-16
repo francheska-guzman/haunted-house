@@ -4,7 +4,7 @@ body {
 	background-repeat: repeat;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .ghost1 {
 	width: 150px;
@@ -25,14 +25,17 @@ body {
 	width: 300px;
 	height: 50px;
 	border: none;
-	background-color: #14004C;
-	font-family: 'Tangerine', cursive;
+	background-color: #390651;
+	font-family: 'Lato', sans-serif;
 	font-size: 30px;
 	color: #FFFFFF;
+	opacity: .7;
 }
 
 .aStory:hover {
-	background-color: #48A2D6;
+	transition: 1s;
+	background-color: #c69024;
+	opacity: 1;
 }
 
 #house {
