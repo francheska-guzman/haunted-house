@@ -1,3 +1,12 @@
+/* 
+Francheska Guzman
+CodeBridge Cycle 2 Cohort 3
+March 16, 2017 
+*/
+
+/* Functions Boo1, Boo2 and Boo3 moves ghosts near the hunting house
+and disappear (using opacity 0). The objective is look like they are 
+get into the house. */
 function Boo1() {
 	var elem = document.getElementById("firstGhost");
 	var pos = 0;
@@ -59,6 +68,9 @@ function Boo3() {
 	}
 }
 
+/* Functions iceCream1, iceCream2 and iceCream3 move the icecream from the
+freezer to the center of the page.  The ghosts (we can't see them)
+are eating icecream. */
 function iceCream1() {
 	document.getElementById("icecream1").style.opacity = "1";
 	document.getElementById("icecream1").style.transition = "3s";
@@ -117,6 +129,8 @@ function iceCream3() {
 			document.getElementById("icecream3").style.opacity = "0.0";
 			document.getElementById("icecream3").style.transition = "10s";
 			cat1();
+			/* I call the function cat1, so the cat get into the
+			kitchen and watch the ghosts eating icecreams. */
 		}
 		else {
 			pos++;
@@ -212,6 +226,8 @@ function cat2() {
 	function frame() {
 		if (pos == 400) {
 			clearInterval(id);
+			/* Call the function fan and Boo7, Boo8 and Boo9. The fan
+			move away the three ghosts. */
 			fan();
 			Boo7();
 			Boo8();
