@@ -27,7 +27,10 @@ function Boo2() {
 			clearInterval(id);
 			document.getElementById("secondGhost").style.opacity = "0.0";
 			document.getElementById("secondGhost").style.transition = "0.5s";
-			Inside();
+			document.getElementById("house").style.backgroundImage = "url('images/bg2.jpg')";
+			iceCream1();
+			iceCream2();
+			iceCream3();
 		}
 		else {
 			pos++;
@@ -114,7 +117,7 @@ function iceCream3() {
 			clearInterval(id);
 			document.getElementById("icecream3").style.opacity = "0.0";
 			document.getElementById("icecream3").style.transition = "15s";
-			cat();
+			cat1();
 		}
 		else {
 			pos++;
@@ -124,7 +127,7 @@ function iceCream3() {
 	}
 }
 
-function cat() {
+function cat1() {
 	document.getElementById("cat").style.opacity = "1";
 
 	var elem = document.getElementById("cat");
@@ -132,7 +135,7 @@ function cat() {
 	var id = setInterval(frame, 1);
 
 	function frame() {
-		if (pos == 100) {
+		if (pos == 50) {
 			clearInterval(id);
 		}
 		else {
@@ -200,22 +203,94 @@ function Boo6() {
 	}
 }
 
+function cat2() {
+	document.getElementById("cat").style.opacity = "1";
+
+	var elem = document.getElementById("cat");
+	var pos = 300;
+	var id = setInterval(frame, 1);
+
+	function frame() {
+		if (pos == 400) {
+			clearInterval(id);
+			fan();
+			Boo7();
+			Boo8();
+			Boo9();
+		}
+		else {
+			pos++;
+			elem.style.bottom = pos + 'px';
+			elem.style.top = pos + 'px';
+		}
+	}
+}
+
+function fan() {
+	document.getElementById("fan").style.opacity = "1";
+}
+
+function Boo7() {
+	var elem = document.getElementById("firstGhost");
+	var pos = 600;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 2000) {
+			clearInterval(id);
+		}
+		else {
+			pos++;
+			elem.style.left = pos + 'px';
+			elem.style.right = pos + 'px';
+		}
+	}
+}
+
+function Boo8() {
+	var elem = document.getElementById("secondGhost");
+	var pos = 600;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 2000) {
+			clearInterval(id);
+		}
+		else {
+			pos++;
+			elem.style.left = pos + 'px';
+			elem.style.right = pos + 'px';
+		}
+	}
+}
+
+function Boo9() {
+	var elem = document.getElementById("thirdGhost");
+	var pos = 900;
+	var id = setInterval(frame, .5);
+
+	function frame() {
+		if (pos == 1500) {
+			clearInterval(id);
+		}
+		else {
+			pos++;
+			elem.style.left = pos + 'px';
+			elem.style.right = pos + 'px';
+		}
+	}
+}
+
 function beginning() {
 	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 	document.getElementById("cat").style.opacity = "0.0";
 	document.getElementById("icecream1").style.opacity = "0.0";
 	document.getElementById("icecream2").style.opacity = "0.0";
 	document.getElementById("icecream3").style.opacity = "0.0";
+	document.getElementById("fan").style.opacity = "0.0";
 	Boo1();
 	Boo2();
 	Boo3();
-}
-
-function Inside() {
-	document.getElementById("house").style.backgroundImage = "url('images/bg2.jpg')";
-	iceCream1();
-	iceCream2();
-	iceCream3();
 }
 
 function ending() {
@@ -223,4 +298,5 @@ function ending() {
 	Boo4();
 	Boo5();
 	Boo6();
+	cat2();
 }
