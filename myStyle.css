@@ -34,14 +34,14 @@ body {
 
 .aStory:hover {
 	transition: 1s;
-	background-color: #c69024;
+	background-color: #C69024;
 	opacity: 1;
 }
 
 #house {
 	margin: 20px;
 	width: 1200px;
-	height: 700px;
+	height: 650px;
 	background-image: url("images/bg1.jpg");
 	background-repeat: no-repeat;
 	position: relative;
