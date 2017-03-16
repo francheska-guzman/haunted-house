@@ -45,7 +45,7 @@ body {
 	position: absolute;
 }
 
-#icecream1 {
+#icecream1, #icecream3 {
 	top: 100px;
 	left: 900px;
 	position: absolute;
@@ -68,10 +68,11 @@ body {
 }
 
 #ic3 {
-	
+	width: 200px;
+	height: 300px;
 }
 
 #cat {
-	top: 400px;
+	top: 300px;
 	position: absolute;
 }
