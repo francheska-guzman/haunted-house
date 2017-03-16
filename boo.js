@@ -149,6 +149,7 @@ function cat1() {
 
 	function frame() {
 		if (pos == 50) {
+			meow.play();
 			clearInterval(id);
 		}
 		else {
@@ -317,3 +318,7 @@ function ending() {
 	Boo6();
 	cat2();
 }
+
+/* Cat sound effect */
+var meow = new Audio ('audio/cat.mp3');
+meow.loop = false;
