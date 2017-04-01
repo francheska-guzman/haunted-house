@@ -10,7 +10,7 @@ get into the house. */
 function Boo1() {
 	var elem = document.getElementById("firstGhost");
 	var pos = 0;
-	var id = setInterval(frame, 0.5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 650) {
@@ -29,7 +29,7 @@ function Boo1() {
 function Boo2() {
 	var elem = document.getElementById("secondGhost");
 	var pos = -700;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 400) {
@@ -52,7 +52,7 @@ function Boo2() {
 function Boo3() {
 	var elem = document.getElementById("thirdGhost");
 	var pos = -400;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 100) {
@@ -77,7 +77,7 @@ function iceCream1() {
 
 	var elem = document.getElementById("icecream1");
 	var pos = 0;
-	var id = setInterval(frame, 1);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 150) {
@@ -99,7 +99,7 @@ function iceCream2() {
 
 	var elem = document.getElementById("icecream2");
 	var pos = 250;
-	var id = setInterval(frame, 1);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 550) {
@@ -121,7 +121,7 @@ function iceCream3() {
 
 	var elem = document.getElementById("icecream3");
 	var pos = 600;
-	var id = setInterval(frame, 1);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 800) {
@@ -145,7 +145,7 @@ function cat1() {
 
 	var elem = document.getElementById("cat");
 	var pos = 0;
-	var id = setInterval(frame, 1);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 50) {
@@ -165,7 +165,7 @@ function Boo4() {
 	document.getElementById("firstGhost").style.transition = "5s";
 	var elem = document.getElementById("firstGhost");
 	var pos = 200;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 200) {
@@ -184,7 +184,7 @@ function Boo5() {
 	document.getElementById("secondGhost").style.transition = "5s";
 	var elem = document.getElementById("secondGhost");
 	var pos = 0;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 100) {
@@ -203,7 +203,7 @@ function Boo6() {
 	document.getElementById("thirdGhost").style.transition = "5s";
 	var elem = document.getElementById("thirdGhost");
 	var pos = 0;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 200) {
@@ -222,7 +222,7 @@ function cat2() {
 
 	var elem = document.getElementById("cat");
 	var pos = 300;
-	var id = setInterval(frame, 1);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 400) {
@@ -250,7 +250,7 @@ function Boo7() {
 	document.getElementById("firstGhost").style.top = "0px";
 	var elem = document.getElementById("firstGhost");
 	var pos = 500;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 1400) {
@@ -268,7 +268,7 @@ function Boo8() {
 	document.getElementById("secondGhost").style.top = "100px";
 	var elem = document.getElementById("secondGhost");
 	var pos = 0;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 1700) {
@@ -285,7 +285,7 @@ function Boo8() {
 function Boo9() {
 	var elem = document.getElementById("thirdGhost");
 	var pos = 900;
-	var id = setInterval(frame, .5);
+	var id = setInterval(frame, 9);
 
 	function frame() {
 		if (pos == 1500) {
