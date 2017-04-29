@@ -1,8 +1,8 @@
 # Animation
 
-## Per Scholas' Project 6: Animation
+### Per Scholas' Project 6: Animation
 
-Instructions:
+#### Instructions:
 
 1. Click "Part 1": 
   * Three hungry ghosts enter to Francheska's Haunted House. 
