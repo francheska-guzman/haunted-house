@@ -1,6 +1,6 @@
 # Animation
 
-### Per Scholas' Project 6: Animation
+### Per Scholas' Project 6
 
 #### Instructions:
 
