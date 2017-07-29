@@ -8,62 +8,69 @@ March 16, 2017
 and disappear (using opacity 0). The objective is look like they are 
 get into the house. */
 function Boo1() {
-	var elem = document.getElementById("firstGhost");
+	var boo = document.getElementById("firstGhost");
 	var pos = 0;
 	var id = setInterval(frame, 9);
+
+	boo.style.display = "block";
 
 	function frame() {
 		if (pos == 650) {
 			clearInterval(id);
-			document.getElementById("firstGhost").style.opacity = "0.0";
-			document.getElementById("firstGhost").style.transition = "5s";
+			boo.style.opacity = "0.0";
+			boo.style.transition = "5s";
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
 		}
 	}
 }
 
 function Boo2() {
-	var elem = document.getElementById("secondGhost");
+	var boo = document.getElementById("secondGhost");
+	var house = document.getElementById("house");
 	var pos = -700;
 	var id = setInterval(frame, 9);
+
+	boo.style.display = "block";
 
 	function frame() {
 		if (pos == 400) {
 			clearInterval(id);
-			document.getElementById("secondGhost").style.opacity = "0.0";
-			document.getElementById("secondGhost").style.transition = "0.5s";
-			document.getElementById("house").style.backgroundImage = "url('images/bg2.jpg')";
+			boo.style.opacity = "0.0";
+			boo.style.transition = "0.5s";
+			house.style.backgroundImage = "url('images/bg2.jpg')";
 			iceCream1();
 			iceCream2();
 			iceCream3();
 		}
 		else {
 			pos++;
-			elem.style.left = pos + 'px';
-			elem.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
 		}
 	}
 }
 
 function Boo3() {
-	var elem = document.getElementById("thirdGhost");
+	var boo = document.getElementById("thirdGhost");
 	var pos = -400;
 	var id = setInterval(frame, 9);
+
+	boo.style.display = "block";
 
 	function frame() {
 		if (pos == 100) {
 			clearInterval(id);
-			document.getElementById("thirdGhost").style.opacity = "0.0";
-			document.getElementById("thirdGhost").style.transition = "5s";
+			boo.style.opacity = "0.0";
+			boo.style.transition = "5s";
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.top= pos + 'px';
+			boo.style.right = pos + 'px';
+			boo.style.top= pos + 'px';
 		}
 	}
 }
@@ -75,20 +82,22 @@ function iceCream1() {
 	document.getElementById("icecream1").style.opacity = "1";
 	document.getElementById("icecream1").style.transition = "3s";
 
-	var elem = document.getElementById("icecream1");
+	var icecream = document.getElementById("icecream1");
 	var pos = 0;
 	var id = setInterval(frame, 9);
+
+	icecream.style.display = "block";
 
 	function frame() {
 		if (pos == 150) {
 			clearInterval(id);
-			document.getElementById("icecream1").style.opacity = "0.0";
-			document.getElementById("icecream1").style.transition = "10s";
+			icecream.style.opacity = "0.0";
+			icecream.style.transition = "10s";
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			icecream.style.right = pos + 'px';
+			icecream.style.left = pos + 'px';
 		}
 	}
 }
@@ -97,20 +106,22 @@ function iceCream2() {
 	document.getElementById("icecream2").style.opacity = "1";
 	document.getElementById("icecream2").style.transition = "3s";
 
-	var elem = document.getElementById("icecream2");
+	var icecream = document.getElementById("icecream2");
 	var pos = 250;
 	var id = setInterval(frame, 9);
+
+	icecream.style.display = "block";
 
 	function frame() {
 		if (pos == 550) {
 			clearInterval(id);
-			document.getElementById("icecream2").style.opacity = "0.0";
-			document.getElementById("icecream2").style.transition = "10s";
+			icecream.style.opacity = "0.0";
+			icecream.style.transition = "10s";
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			icecream.style.right = pos + 'px';
+			icecream.style.left = pos + 'px';
 		}
 	}
 }
@@ -119,23 +130,25 @@ function iceCream3() {
 	document.getElementById("icecream3").style.opacity = "1";
 	document.getElementById("icecream3").style.transition = "3s";
 
-	var elem = document.getElementById("icecream3");
+	var icecream = document.getElementById("icecream3");
 	var pos = 600;
 	var id = setInterval(frame, 9);
+
+	icecream.style.display = "block";
 
 	function frame() {
 		if (pos == 800) {
 			clearInterval(id);
-			document.getElementById("icecream3").style.opacity = "0.0";
-			document.getElementById("icecream3").style.transition = "10s";
+			icecream.style.opacity = "0.0";
+			icecream.style.transition = "10s";
 			cat1();
 			/* I call the function cat1, so the cat get into the
 			kitchen and watch the ghosts eating icecreams. */
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			icecream.style.right = pos + 'px';
+			icecream.style.left = pos + 'px';
 		}
 	}
 }
@@ -143,9 +156,11 @@ function iceCream3() {
 function cat1() {
 	document.getElementById("cat").style.opacity = "1";
 
-	var elem = document.getElementById("cat");
+	var cat = document.getElementById("cat");
 	var pos = 0;
 	var id = setInterval(frame, 9);
+
+	cat.style.display = "block";
 
 	function frame() {
 		if (pos == 50) {
@@ -154,8 +169,8 @@ function cat1() {
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			cat.style.right = pos + 'px';
+			cat.style.left = pos + 'px';
 		}
 	}
 }
@@ -163,7 +178,8 @@ function cat1() {
 function Boo4() {
 	document.getElementById("firstGhost").style.opacity = "1";
 	document.getElementById("firstGhost").style.transition = "5s";
-	var elem = document.getElementById("firstGhost");
+
+	var boo = document.getElementById("firstGhost");
 	var pos = 200;
 	var id = setInterval(frame, 9);
 
@@ -173,8 +189,8 @@ function Boo4() {
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
 		}
 	}
 }
@@ -182,7 +198,8 @@ function Boo4() {
 function Boo5() {
 	document.getElementById("secondGhost").style.opacity = "1";
 	document.getElementById("secondGhost").style.transition = "5s";
-	var elem = document.getElementById("secondGhost");
+
+	var boo = document.getElementById("secondGhost");
 	var pos = 0;
 	var id = setInterval(frame, 9);
 
@@ -192,8 +209,8 @@ function Boo5() {
 		}
 		else {
 			pos++;
-			elem.style.left = pos + 'px';
-			elem.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
 		}
 	}
 }
@@ -201,7 +218,8 @@ function Boo5() {
 function Boo6() {
 	document.getElementById("thirdGhost").style.opacity = "1";
 	document.getElementById("thirdGhost").style.transition = "5s";
-	var elem = document.getElementById("thirdGhost");
+
+	var boo = document.getElementById("thirdGhost");
 	var pos = 0;
 	var id = setInterval(frame, 9);
 
@@ -211,8 +229,8 @@ function Boo6() {
 		}
 		else {
 			pos++;
-			elem.style.right = pos + 'px';
-			elem.style.top= pos + 'px';
+			boo.style.right = pos + 'px';
+			boo.style.top= pos + 'px';
 		}
 	}
 }
@@ -220,9 +238,11 @@ function Boo6() {
 function cat2() {
 	document.getElementById("cat").style.opacity = "1";
 
-	var elem = document.getElementById("cat");
+	var cat = document.getElementById("cat");
 	var pos = 300;
 	var id = setInterval(frame, 9);
+
+	cat.style.display = "block";
 
 	function frame() {
 		if (pos == 400) {
@@ -236,21 +256,25 @@ function cat2() {
 		}
 		else {
 			pos++;
-			elem.style.bottom = pos + 'px';
-			elem.style.top = pos + 'px';
+			cat.style.bottom = pos + 'px';
+			cat.style.top = pos + 'px';
 		}
 	}
 }
 
 function fan() {
-	document.getElementById("fan").style.opacity = "1";
+	var fan = document.getElementById("fan");
+
+	fan.style.display = "block";
+	fan.style.opacity = "1";
 }
 
 function Boo7() {
-	document.getElementById("firstGhost").style.top = "0px";
-	var elem = document.getElementById("firstGhost");
+	var boo = document.getElementById("firstGhost");
 	var pos = 500;
 	var id = setInterval(frame, 9);
+
+	boo.style.top = "0px";
 
 	function frame() {
 		if (pos == 1400) {
@@ -258,17 +282,18 @@ function Boo7() {
 		}
 		else {
 			pos++;
-			elem.style.left = pos + 'px';
-			elem.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
 		}
 	}
 }
 
 function Boo8() {
-	document.getElementById("secondGhost").style.top = "100px";
-	var elem = document.getElementById("secondGhost");
+	var boo = document.getElementById("secondGhost");
 	var pos = 0;
 	var id = setInterval(frame, 9);
+
+	boo.style.top = "100px";
 
 	function frame() {
 		if (pos == 1700) {
@@ -276,14 +301,14 @@ function Boo8() {
 		}
 		else {
 			pos++;
-			elem.style.left = pos + 'px';
-			elem.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
 		}
 	}
 }
 
 function Boo9() {
-	var elem = document.getElementById("thirdGhost");
+	var boo = document.getElementById("thirdGhost");
 	var pos = 900;
 	var id = setInterval(frame, 9);
 
@@ -293,8 +318,8 @@ function Boo9() {
 		}
 		else {
 			pos++;
-			elem.style.left = pos + 'px';
-			elem.style.right = pos + 'px';
+			boo.style.left = pos + 'px';
+			boo.style.right = pos + 'px';
 		}
 	}
 }

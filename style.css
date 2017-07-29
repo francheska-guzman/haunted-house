@@ -14,6 +14,15 @@ h1 {
 	font-family: 'Gloria Hallelujah', cursive;
 }
 
+a {
+	color: #ad741f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e89519;
+}
+
 .story {
 	width: 300px;
 	height: 50px;
@@ -42,25 +51,30 @@ h1 {
 }
 
 #firstGhost {
+	display: none;
 	top: 100px;
 	position: absolute;
 }
 
 #secondGhost {
+	display: none;
 	position: absolute;
 }
 
 #thirdGhost {
+	display: none;
 	position: absolute;
 }
 
 #icecream1, #icecream3 {
+	display: none;
 	top: 100px;
 	left: 900px;
 	position: absolute;
 }
 
 #icecream2 {
+	display: none;
 	top: 100px;
 	left: 950px;
 	position: absolute;
@@ -82,11 +96,13 @@ h1 {
 }
 
 #cat {
+	display: none;
 	top: 300px;
 	position: absolute;
 }
 
 #fan {
+	display: none;
 	top: 400px;
 	left: 200px;
 	position: absolute;
