@@ -20,12 +20,7 @@ A short scary story. Enjoy it!
 
 ## <a id="instructions">How to use</a>
 
-1. Click "Part 1" button: 
-  * Three hungry ghosts enter to the house. 
-  * Each ghost pick an ice cream, you can't see them (opacity)... but a cat can!
-  
-2. Click "Part 2" button:
-  * The cat takes revenge by using a fan!
+Just open the site and have fun! If you want to listen the audio effects, I recommend you use Google Chrome or Firefox browsers.
 
 ## <a id="technologies">Technologies used</a>
 
