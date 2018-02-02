@@ -42,6 +42,7 @@ a:hover {
 
 #house {
 	margin: auto;
+	margin-bottom: 80px;
 	width: 1200px;
 	height: 650px;
 	background-image: url("images/bg1.jpg");
@@ -106,4 +107,8 @@ a:hover {
 	top: 400px;
 	left: 200px;
 	position: absolute;
+}
+
+#continue {
+	display: none;
 }

@@ -173,6 +173,10 @@ function cat1() {
 			cat.style.left = pos + 'px';
 		}
 	}
+
+	setTimeout(function() {
+		ending();
+	}, 1 * 10000)
 }
 
 function Boo4() {
