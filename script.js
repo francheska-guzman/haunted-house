@@ -275,7 +275,7 @@ function fan() {
 	setTimeout(function() {
 		var title = document.getElementById("title");
 
-		title.innerHTML = 'The End... <a href="https://francheska-guzman.github.io/haunted-house/">Watch Again!</a>';
+		title.innerHTML = 'The End... <a href="https://francheska-guzman.github.io/haunted-house/">Watch Again</a>!';
 	}, 1 * 18000)
 }
 
