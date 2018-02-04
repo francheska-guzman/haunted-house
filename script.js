@@ -271,6 +271,12 @@ function fan() {
 
 	fan.style.display = "block";
 	fan.style.opacity = "1";
+
+	setTimeout(function() {
+		var title = document.getElementById("title");
+
+		title.innerHTML = 'The End... <a href="https://francheska-guzman.github.io/haunted-house/">Watch Again!</a>';
+	}, 1 * 18000)
 }
 
 function Boo7() {
