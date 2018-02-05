@@ -335,6 +335,7 @@ function Boo9() {
 }
 
 function beginning() {
+	music.play();
 	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 	document.getElementById("cat").style.opacity = "0.0";
 	document.getElementById("icecream1").style.opacity = "0.0";
@@ -357,3 +358,7 @@ function ending() {
 /* Cat sound effect */
 var meow = new Audio ('audio/cat.mp3');
 meow.loop = false;
+
+/* The Addam's (Francheska's) Family */
+var music = new Audio ('audio/the-addams-i-mean-francheskas-family-theme-song.mp3');
+music.loop = false;
