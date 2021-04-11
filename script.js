@@ -335,6 +335,7 @@ function Boo9() {
 }
 
 function beginning() {
+	start.play();
 	music.play();
 	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 	document.getElementById("cat").style.opacity = "0.0";
@@ -355,10 +356,14 @@ function ending() {
 	cat2();
 }
 
-/* Cat sound effect */
-var meow = new Audio ('audio/cat.mp3');
-meow.loop = false;
+/* Initial sound */
+var start = new Audio ('./audio/1sec.mp3');
+start.loop = false;
 
 /* The Addam's (Francheska's) Family */
-var music = new Audio ('audio/the-addams-i-mean-francheskas-family-theme-song.mp3');
+var music = new Audio ('./audio/the-addams-i-mean-francheskas-family-theme-song.mp3');
 music.loop = false;
+
+/* Cat sound effect */
+var meow = new Audio ('./audio/cat.mp3');
+meow.loop = false;
