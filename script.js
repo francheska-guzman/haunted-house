@@ -336,7 +336,6 @@ function Boo9() {
 
 function beginning() {
 	music.play();
-	music.play();
 	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 	document.getElementById("cat").style.opacity = "0.0";
 	document.getElementById("icecream1").style.opacity = "0.0";
