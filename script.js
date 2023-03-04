@@ -335,13 +335,13 @@ function Boo9() {
 }
 
 function beginning() {
-	music.play();
 	document.getElementById("house").style.backgroundImage = "url('images/bg1.jpg')";
 	document.getElementById("cat").style.opacity = "0.0";
 	document.getElementById("icecream1").style.opacity = "0.0";
 	document.getElementById("icecream2").style.opacity = "0.0";
 	document.getElementById("icecream3").style.opacity = "0.0";
 	document.getElementById("fan").style.opacity = "0.0";
+	music.play;
 	Boo1();
 	Boo2();
 	Boo3();
@@ -355,10 +355,10 @@ function ending() {
 	cat2();
 }
 
-/* The Francheska's Family */
-var music = new Audio ('audio/francheskasfamilythemesong.mp3');
+/* The Francheska's Family Theme Song */
+var music = new Audio ('./audio/themesong.mp3');
 music.loop = false;
 
 /* Cat sound effect */
-var meow = new Audio ('audio/cat.mp3');
+var meow = new Audio ('./audio/cat.mp3');
 meow.loop = false;
