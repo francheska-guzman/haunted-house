@@ -341,7 +341,7 @@ function beginning() {
 	document.getElementById("icecream2").style.opacity = "0.0";
 	document.getElementById("icecream3").style.opacity = "0.0";
 	document.getElementById("fan").style.opacity = "0.0";
-	music.play;
+	theme.play();
 	Boo1();
 	Boo2();
 	Boo3();
@@ -356,8 +356,8 @@ function ending() {
 }
 
 /* The Francheska's Family Theme Song */
-var music = new Audio ('./audio/themesong.mp3');
-music.loop = false;
+var theme = new Audio ('./audio/los-locos-addams.mp3');
+theme.loop = false;
 
 /* Cat sound effect */
 var meow = new Audio ('./audio/cat.mp3');
